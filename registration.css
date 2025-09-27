@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#MyVideo{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body {
+    background: rgba(255, 255, 255, 0.74);
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: 'raleway';
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1,
+p {
+    text-align: center;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 1em 0 .2em;
+}
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: .3em;
+    font-size: 20px;
+    background-color: #fbfbfb;
+    border: solid 1px #CCC;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+input[type="email"],
+input[type="tel"] {
+    margin-bottom: 1em;
+}
+
+textarea {
+    min-height: 180px;
+}
+
+select {
+    color: indigo;
+}
+
+option {
+    color: rgb(0, 0, 0);
+    background: white;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    display: inline;
+    width: auto;
+}
+
+
+.inline-label {
+    display: inline;
+    width: auto;
+}
+
+input[type=submit],
+input[type=reset] {
+    background: rgb(rgb(255, 136, 0), green, blue);
+    margin: 1em 0 0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all .3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+    background: white
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background: rgb(30, 255, 0);
+    outline: none;
+    color: black;
+}
+
+input[type=reset]:focus,
+input[type=reset]:hover {
+    background: rgb(255, 0, 0);
+    outline: none;
+    color: black;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fbfbfb;
+}

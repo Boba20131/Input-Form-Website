@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+  <header>
+      <nav>
+        <ul>
+          <li><a href="galleries.html">gallery</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <video autoplay loop id="MyVideo">
+     <source src="Pyramaids.mp4" type="Video/mp4">
+  </video>
+
+
+
+    <div class="column">
+
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" 
+                   name="name" 
+                   id="name" 
+                   placeholder="Enter your full name"
+                   minlength="3" 
+                   maxlength="50" 
+                   required 
+                   autofocus>
+        </div>
+
+        <div>
+            <label for="the-email">Email Address</label>
+            <input type="email" 
+                   name="email" 
+                   id="the-email" 
+                   placeholder="example@example.com"
+                   required>
+        </div>
+
+        <div>
+            <label for="the-phone">Phone Number</label>
+            <input type="tel" 
+                   name="phone" 
+                   id="the-phone" 
+                   placeholder="+971-50-1234567" 
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+
+        <div>
+            <label>Gender</label>
+            <div>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label class="inline-label" for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="female">
+                <label class="inline-label" for="female">Female</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="Non-Binary" value="Non-Binary">
+                <label class="inline-label" for="Non-Binary">Non-Binary</label>
+            </div>
+        </div>
+
+
+        <div>
+             <label for="arrive-date">Arriving Date</label>
+             <input type="date" 
+                    name="arrive-date" 
+                    id="arrive-date" 
+                    min="2025-09-01" 
+                    max="2026-12-31">
+        </div>
+
+        <div>
+            <label for="depart-date">Departure Date</label>
+            <input type="date" 
+                   name="depart-date" 
+                   id="depart-date">
+        </div>
+
+
+        <div>
+            <label for="profile-pic">Profile Pic</label>
+            <input type="file" 
+                   name="profile-pic" 
+                   id="profile-pic" 
+                   accept="image/*">
+        </div>
+
+        <div>
+            <label for="passport">Passport (PDF only)</label>
+            <input type="file" 
+                   name="passport" 
+                   id="passport" 
+                   accept=".pdf">
+        </div>
+
+        <div>
+            <label for="visa">Visa (Multiple Files Allowed)</label>
+            <input type="file" 
+                   name="visa" 
+                   id="visa" 
+                   accept=".jpg,.png,.pdf" 
+                   multiple>
+        </div>
+
+
+        <div>
+            <label for="Cities">Where would you like to Travel?</label>
+            <select name="Cities" id="Cities" required size="5">
+                <option value="" disabled selected>Choose one</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Sohag">Sohag</option>
+                <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+                <option value="Minya">Minya</option>
+                <option value="Giza">Giza</option>
+                <option value="Suez">Suez</option>
+                <option value="Hurghada">Hurghada</option>
+                <option value="Faiyum">Faiyum</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Please check the services that you need</label>
+            <div>
+                <input type="checkbox" name="Airline-Tickets" id="Airline-Tickets" checked>
+                <label class="inline-label" for="Airline-Tickets">Airline Tickets</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Rental-Car" id="Rental-Car">
+                <label class="inline-label" for="Rental-Car">Rental Car</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Hotel-Accommodations" id="Hotel-Accommodations" disabled>
+                <label class="inline-label" for="Hotel-Accommodations">Hotel Accommodations (Unavailable)</label>
+            </div>
+        </div>
+
+        <div>
+            <label>How will you travel?</label>
+            <div>
+                <input type="radio" name="travel-method" id="Plane" value="Plane">
+                <label class="inline-label" for="Plane">Plane</label>
+            </div>
+            <div>
+                <input type="radio" name="travel-method" id="Train" value="Train">
+                <label class="inline-label" for="Train">Train</label>
+            </div>
+            <div>
+                <input type="radio" name="travel-method" id="Bus" value="Bus">
+                <label class="inline-label" for="Bus">Bus</label>
+            </div>
+            <div>
+                <input type="radio" name="travel-method" id="Car" value="Car">
+                <label class="inline-label" for="Car">Car</label>
+            </div>
+        </div>
+
+        <div>
+            <label>What kind of payment arrangement would you like?</label>
+            <div>
+                <input type="radio" name="payment" id="BOOK-NOM" value="BOOK NOM, PAY NOM">
+                <label class="inline-label" for="BOOK-NOM">BOOK NOM, PAY NOM</label>
+            </div>
+            <div>
+                <input type="radio" name="payment" id="DEPOSIT-NOM" value="DEPOSIT NOM" checked>
+                <label class="inline-label" for="DEPOSIT-NOM">DEPOSIT NOM, PAY INSTALLMENTS</label>
+            </div>
+        </div>
+
+        <div>
+            <label>How would you like to be contacted?</label>
+            <div>
+                <input type="radio" name="contact" id="Email" value="Email">
+                <label class="inline-label" for="Email">Email</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" id="Phone" value="Phone">
+                <label class="inline-label" for="Phone">Phone</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" id="Text" value="Text">
+                <label class="inline-label" for="Text">Text Messaging</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="url">Personal Website</label>
+            <input type="url" name="url" id="url" placeholder="https://example.com">
+        </div>
+
+        <div>
+            <label for="budget">Estimated Budget ($)</label>
+            <input type="number" name="budget" id="budget" min="100" step="50" value="500">
+        </div>
+
+        <div>
+            <label for="people">Number of Travelers</label>
+            <input type="number" name="people" id="people" min="1" max="20" value="1">
+        </div>
+
+        <div>
+            <label for="color">Favorite Theme Color</label>
+            <input type="color" name="color" id="color" value="#008080">
+        </div>
+
+        <div>
+            <label for="satisfaction">Satisfaction Level (1-10)</label>
+            <input type="range" name="satisfaction" id="satisfaction" min="1" max="10" step="1" value="5">
+        </div>
+
+        <div>
+            <label for="the-message">Leave a Message</label>
+            <textarea name="message" id="the-message" placeholder="Type your message here..." maxlength="300"></textarea>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="newsletter" value="yes" checked> Join our mailing list?
+            </label>
+        </div>
+
+
+        <div>
+            <input type="submit" value="Submit" formaction="/submitForm" formmethod="post">
+            <input type="reset" value="Reset">
+        </div>
+
+    </div>
+</form>
+</body>
+</html>
